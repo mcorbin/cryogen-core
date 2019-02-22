@@ -23,6 +23,6 @@
          {:tag :url
           :content
           [{:tag :loc
-            :content [(str site-url (loc f))]}
+            :content [(str site-url "/" (loc f))]}
            {:tag :lastmod
             :content [(-> f (.lastModified) (Date.) format-date)]}]})})))
